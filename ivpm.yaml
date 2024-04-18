@@ -1,0 +1,14 @@
+
+package:
+  name: svdep
+
+  setup-deps: []
+
+  dep-sets:
+  - name: default
+    deps: []
+
+  - name: default-dev
+    deps: []
+
+
