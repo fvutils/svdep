@@ -9,6 +9,12 @@ package:
     deps: []
 
   - name: default-dev
-    deps: []
+    deps: 
+    - name: pytest-fv
+      url: https://github.com/fvutils/pytest-fv.git
+    - name: ply
+      src: pypi
+    - name: uvm
+      url: https://www.accellera.org/images/downloads/standards/uvm/uvm-1.2.tar.gz
 
 

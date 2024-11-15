@@ -1,5 +1,5 @@
 #****************************************************************************
-#* task_compute_file_deps.py
+#* file_collection_info.py
 #*
 #* Copyright 2023 Matthew Ballance and Contributors
 #*
@@ -19,29 +19,22 @@
 #*     Author: 
 #*
 #****************************************************************************
-from typing import List
-from .file_collection_info import FileCollectionInfo
-from .file_deps_report import FileDepsReport
+import dataclasses as dc
+from typing import Dict, List
 
-class TaskComputeFileDeps(object):
+@dc.dataclass
+class FileCollection(object):
+    root_files : List = dc.field(default_factory=list)
+    file_info : Dict[str, object] = dc.field(default_factory=dict)
 
-    def __init__(self, file_info_i : FileCollectionInfo):
-        self.file_info_i = file_info_i
-        self.file_info_o = None
-        self.report = None
-        pass
-
-    def compute(self, root_files : List[str]) -> (
-            FileCollectionInfo, FileDepsReport):
-        self.file_info_i = FileCollectionInfo()
-        self.report = FileDepsReport()
-
-        for file in root_files:
-            self.process_file(file)
-
-    def process_file(self, file):
-
-        if 
-
+    def to_dict(self):
+        ret = {}
+        ret["root_files"] = []
+        for file in self.root_files:
+            ret["root_files"].append(file.to_dict())
+        ret["file_info"] = {}
+        for path in self.file_info.keys():
+            ret["file_info"][path] = self.file_info[path].to_dict()
+        return ret
 
 
