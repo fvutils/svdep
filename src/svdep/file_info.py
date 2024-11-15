@@ -5,6 +5,7 @@ from typing import List
 class FileInfo(object):
     name : str
     timestamp : int
+    checked : bool = False
     includes : List[str] = dc.field(default_factory=list)
 
     def to_dict(self):

@@ -22,6 +22,7 @@
 import os
 from typing import List
 from .file_collection import FileCollection
+from .file_info import FileInfo
 from .file_deps_report import FileDepsReport
 
 class TaskCheckUpToDate(object):
@@ -41,17 +42,44 @@ class TaskCheckUpToDate(object):
                 ret &= info.root_files[i].name == self.root_files[i]
 
                 if ret:
-                    if os.path.getmtime(self.root_files[i]) > timestamp:
-                        ret = False
+                    ret &= (os.path.getmtime(self.root_files[i]) <= timestamp)
 
                     if ret:
                         # Check included files
-                        pass
+                        for inc_f in info.root_files[i].includes:
+                            ret &= self._checkInclude(info, info.file_info[inc_f], timestamp)
+
+                            if not ret:
+                                break
                 
                 if not ret:
                     break
 
         return ret
+    
+    def _checkInclude(self, info : FileCollection, inc : FileInfo, timestamp):
+        if inc.checked:
+            return True
+        else:
+            print("timestamp[%s]: %d ; timestamp=%d" % (
+                inc.name,
+                os.path.getmtime(inc.name),
+                timestamp
+            ))
+            ret = (os.path.getmtime(inc.name) <= timestamp)
+            print("ret[1]: %s" % ret);
+
+            if ret:
+                for si in inc.includes:
+                    sub_inc = info.file_info[si]
+                    ret &= self._checkInclude(info, sub_inc, timestamp)
+                    print("ret[2]: %s" % ret);
+
+                    if not ret:
+                        break
+
+            inc.checked = True
+            return ret
 
 
 
