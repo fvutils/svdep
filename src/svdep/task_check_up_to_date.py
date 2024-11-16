@@ -61,19 +61,12 @@ class TaskCheckUpToDate(object):
         if inc.checked:
             return True
         else:
-            print("timestamp[%s]: %d ; timestamp=%d" % (
-                inc.name,
-                os.path.getmtime(inc.name),
-                timestamp
-            ))
             ret = (os.path.getmtime(inc.name) <= timestamp)
-            print("ret[1]: %s" % ret);
 
             if ret:
                 for si in inc.includes:
                     sub_inc = info.file_info[si]
                     ret &= self._checkInclude(info, sub_inc, timestamp)
-                    print("ret[2]: %s" % ret);
 
                     if not ret:
                         break
