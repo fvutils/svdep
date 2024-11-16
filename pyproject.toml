@@ -1,13 +1,9 @@
 [project]
 name = "svdep"
 version = "0.0.1"
-dependencies = [
-    "ply"
-]
+dependencies = [ "ply" ]
 
-authors = [
-    {name = "Matthew Ballance", email = "matt.ballance@gmail.com"}
-]
+authors = [ {name = "Matthew Ballance", email = "matt.ballance@gmail.com"} ]
 
 description = "Checks whether SystemVerilog need to be recompiled"
 
