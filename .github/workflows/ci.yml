@@ -1,0 +1,48 @@
+name: CI
+on:
+  - push
+  - pull_request
+  - workflow_dispatch
+
+jobs:
+  ci-linux:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    # - uses: actions/setup-python@v2
+    #   with:
+    #     python-version: '3.9'
+    - name: Load Dependencies
+      run: |
+        # Install dependencies required to load ivpm.yaml file
+        python3 -m venv py
+        ./py/bin/python -m pip install ivpm build
+        ./py/bin/ivpm update
+    - name: Run Tests
+      run: |
+        ./packages/python/bin/python -m pytest tests
+    - name: Build Wheel
+      run: |
+        sed -i -e "s/version = \"\([0-9][0-9\.]*\)\"/version = \"\1.${GITHUB_RUN_ID}\"/"
+        ./py/bin/python3 build --wheel
+
+    # - name: Build Docs
+    #   run: |
+    #     ./packages/python/bin/sphinx-build -M html ./doc/source build
+    #     touch build/html/.nojekyll
+
+    - name: Publish to PyPi
+      if: startsWith(github.ref, 'refs/heads/master')
+      uses: pypa/gh-action-pypi-publish@release/v1
+      with:
+        user: __token__
+        password: ${{ secrets.PYPI_API_TOKEN }}
+
+    # - name: Publish Docs
+    #   if: startsWith(github.ref, 'refs/heads/master')
+    #   uses: JamesIves/github-pages-deploy-action@4.1.7
+    #   with:
+    #     branch: gh-pages
+    #     folder: build/html
+
+

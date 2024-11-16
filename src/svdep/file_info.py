@@ -19,3 +19,11 @@ class FileInfo(object):
         
         return ret
 
+    @classmethod    
+    def from_dict(cls, d):
+        ret = cls(d["name"], d["timestamp"])
+        for path in d["includes"]:
+            ret.includes.append(path)
+        return ret
+
+

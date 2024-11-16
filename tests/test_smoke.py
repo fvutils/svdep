@@ -112,4 +112,23 @@ def test_uvm(dirconfig : pfv.DirConfig):
 #        str(info.file_info)))
     print("info: %s" % str(json.dumps(info.to_dict())))
 
+def test_uvm_dump_load(dirconfig : pfv.DirConfig):
+    from io import StringIO
+    from svdep import FileCollection
+    uvm_dir = os.path.abspath(os.path.join(
+        dirconfig.test_srcdir(), "../packages/uvm"))
 
+    info = TaskBuildFileCollection([
+        os.path.join(uvm_dir, "src/uvm_pkg.sv")],
+        incdirs=[
+            os.path.join(uvm_dir, "src")]).build()
+    
+    info_d = info.to_dict()
+    out = StringIO()
+    json.dump(info_d, out)
+    info_load_d = json.loads(out.getvalue())
+    info_load = FileCollection.from_dict(info_load_d)
+#    print("files: %s ; info: %s" % (
+#        str(info.root_files),
+#        str(info.file_info)))
+    print("info_load: %s" % str(info_load))

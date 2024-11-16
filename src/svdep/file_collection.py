@@ -21,6 +21,7 @@
 #****************************************************************************
 import dataclasses as dc
 from typing import Dict, List
+from .file_info import FileInfo
 
 @dc.dataclass
 class FileCollection(object):
@@ -35,6 +36,15 @@ class FileCollection(object):
         ret["file_info"] = {}
         for path in self.file_info.keys():
             ret["file_info"][path] = self.file_info[path].to_dict()
+        return ret
+    
+    @classmethod
+    def from_dict(cls, d):
+        ret = FileCollection()
+        for file in d["root_files"]:
+            ret.root_files.append(FileInfo.from_dict(file))
+        for path in d["file_info"].keys():
+            ret.file_info[path] = FileInfo.from_dict(d["file_info"][path])
         return ret
 
 
