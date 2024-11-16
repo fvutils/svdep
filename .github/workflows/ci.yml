@@ -16,7 +16,7 @@ jobs:
       run: |
         # Install dependencies required to load ivpm.yaml file
         python3 -m venv py
-        ./py/bin/python -m pip install ivpm build
+        ./py/bin/python -m pip install ivpm build twine
         ./py/bin/ivpm update -a
     - name: Run Tests
       run: |
@@ -35,10 +35,11 @@ jobs:
 
     - name: Publish to PyPi
       if: startsWith(github.ref, 'refs/heads/main')
-      uses: pypa/gh-action-pypi-publish@release/v1
-      with:
-        user: __token__
-        password: ${{ secrets.PYPI_API_TOKEN }}
+      env:
+        TWINE_USERNAME: __token__
+        TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
+      run: |
+        ./py/bin/python -m twine upload dist/*.whl
 
     # - name: Publish Docs
     #   if: startsWith(github.ref, 'refs/heads/master')
