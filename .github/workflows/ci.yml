@@ -17,7 +17,7 @@ jobs:
         # Install dependencies required to load ivpm.yaml file
         python3 -m venv py
         ./py/bin/python -m pip install ivpm build
-        ./py/bin/ivpm update
+        ./py/bin/ivpm update -a
     - name: Run Tests
       run: |
         ./packages/python/bin/python -m pytest tests
