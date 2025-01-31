@@ -6,7 +6,9 @@ package:
 
   dep-sets:
   - name: default
-    deps: []
+    deps: 
+    - name: ply
+      src: pypi
 
   - name: default-dev
     deps: 
