@@ -1,6 +1,7 @@
 import os
 import dataclasses as dc
-from typing import Dict, List
+import logging
+from typing import ClassVar, Dict, List
 from .file_collection import FileCollection
 from .file_info import FileInfo
 from .svpp_lexer import mk_lexer
@@ -12,6 +13,8 @@ class TaskBuildFileCollection(object):
     collection : FileCollection = None
     depth : int = 0
     inc_m : Dict[str,str] = dc.field(default_factory=dict)
+
+    _log : ClassVar = logging.getLogger("TaskBuildFileCollection")
 
     def build(self) -> FileCollection:
         self.collection = FileCollection()
@@ -29,7 +32,7 @@ class TaskBuildFileCollection(object):
         return self.collection
     
     def _buildFileInfo(self, path):
-        print("buildFileInfo: %s" % path)
+        self._log.debug("buildFileInfo: %s" % path)
         if path in self.collection.file_info.keys():
             ret = self.collection.file_info[path]
         else:
@@ -48,7 +51,7 @@ class TaskBuildFileCollection(object):
 #                print("tok: %s" % str(tok))
                 if tok.type == "DIRECTIVE" and tok.value == "include":
                     name_t = lexer.token()
-                    print("name_t: %s" % name_t.value)
+                    self._log.debug("name_t: %s" % name_t.value)
 
                     inc_path = None
                     if name_t.value in self.inc_m.keys():
@@ -67,7 +70,7 @@ class TaskBuildFileCollection(object):
                         inc = self._buildFileInfo(inc_path)
                         ret.includes.append(inc.name)
                     else:
-                        print("Failed to find include %s" % name_t.value)
+                        self._log.critical("Failed to find include %s" % name_t.value)
 
         return ret
         
