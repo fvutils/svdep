@@ -5,23 +5,19 @@ on:
   - workflow_dispatch
 
 jobs:
-  ci-linux:
+  test:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    # - uses: actions/setup-python@v2
-    #   with:
-    #     python-version: '3.9'
     - name: Load Dependencies
       run: |
-        # Install dependencies required to load ivpm.yaml file
         python3 -m venv py
-        ./py/bin/python -m pip install ivpm build twine sphinx
+        ./py/bin/python -m pip install ivpm
         ./py/bin/ivpm update -a
     - name: Run Tests
       run: |
         export PYTHONPATH=$(pwd)/src
-        ./packages/python/bin/python -m pip install pytest-json-ctrf
+        ./packages/python/bin/python -m pip install pytest pytest-json-ctrf
         ./packages/python/bin/python -m pytest tests --ctrf ctrf-report.json
       if: always()
     - name: Publish Test Results
@@ -29,27 +25,57 @@ jobs:
       with:
         report-path: 'ctrf-report.json'
       if: always()
-    - name: Build Wheel
-      run: |
-        sed -i -e "s/version = \"\([0-9][0-9\.]*\)\"/version = \"\1.${GITHUB_RUN_ID}\"/" pyproject.toml
-        ./py/bin/python3 -m build --wheel
 
+  build_wheels:
+    name: Build wheels on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set version
+      shell: bash
+      run: |
+        sed -i.bak -e "s/version = \"\([0-9][0-9\.]*\)\"/version = \"\1.${GITHUB_RUN_ID}\"/" pyproject.toml
+    - name: Build wheels
+      uses: pypa/cibuildwheel@v2.23.3
+    - uses: actions/upload-artifact@v4
+      with:
+        name: cibw-wheels-${{ matrix.os }}-${{ strategy.job-index }}
+        path: ./wheelhouse/*.whl
+
+  build_docs:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
     - name: Build Docs
       run: |
+        python3 -m venv py
+        ./py/bin/python -m pip install sphinx
         ./py/bin/sphinx-build -M html ./docs build
         touch build/html/.nojekyll
-
-    - name: Publish to PyPi
-      if: startsWith(github.ref, 'refs/heads/main')
-      env:
-        TWINE_USERNAME: __token__
-        TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
-      run: |
-        ./py/bin/python -m twine upload dist/*.whl
-
     - name: Publish Docs
       if: startsWith(github.ref, 'refs/heads/main')
       uses: JamesIves/github-pages-deploy-action@v4
       with:
         branch: gh-pages
         folder: build/html
+
+  publish:
+    needs: [test, build_wheels]
+    runs-on: ubuntu-latest
+    if: startsWith(github.ref, 'refs/heads/main')
+    steps:
+    - uses: actions/download-artifact@v4
+      with:
+        pattern: cibw-wheels-*
+        path: dist
+        merge-multiple: true
+    - name: Publish to PyPi
+      env:
+        TWINE_USERNAME: __token__
+        TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
+      run: |
+        python3 -m pip install twine
+        python3 -m twine upload dist/*.whl
