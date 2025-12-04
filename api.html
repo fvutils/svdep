@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>API Reference &#8212; svdep 0.0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <script src="_static/documentation_options.js?v=d45e8c67"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Data Formats" href="data_formats.html" />
+    <link rel="prev" title="Overview" href="overview.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="api-reference">
+<h1>API Reference<a class="headerlink" href="#api-reference" title="Link to this heading">¶</a></h1>
+<p>This section documents the public API of the svdep package.</p>
+<section id="main-classes">
+<h2>Main Classes<a class="headerlink" href="#main-classes" title="Link to this heading">¶</a></h2>
+<section id="taskbuildfilecollection">
+<h3>TaskBuildFileCollection<a class="headerlink" href="#taskbuildfilecollection" title="Link to this heading">¶</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="TaskBuildFileCollection">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">TaskBuildFileCollection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">root_paths</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">incdirs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#TaskBuildFileCollection" title="Link to this definition">¶</a></dt>
+<dd><p>Builds a file collection by scanning root files and their includes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>root_paths</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – List of paths to root SystemVerilog files to scan.</p></li>
+<li><p><strong>incdirs</strong> (<em>List</em><em>[</em><em>str</em><em>]</em><em>, </em><em>optional</em>) – List of include directories to search for included files.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="TaskBuildFileCollection.build">
+<span class="sig-name descname"><span class="pre">build</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#TaskBuildFileCollection.build" title="Link to this definition">¶</a></dt>
+<dd><p>Scan all root files and their includes, building a complete dependency tree.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A FileCollection containing all discovered files and their dependencies.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="#FileCollection" title="FileCollection">FileCollection</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<p><strong>Example:</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">svdep</span><span class="w"> </span><span class="kn">import</span> <span class="n">TaskBuildFileCollection</span>
+
+<span class="n">task</span> <span class="o">=</span> <span class="n">TaskBuildFileCollection</span><span class="p">(</span>
+    <span class="n">root_paths</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;top.sv&#39;</span><span class="p">,</span> <span class="s1">&#39;dut.sv&#39;</span><span class="p">],</span>
+    <span class="n">incdirs</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;include/&#39;</span><span class="p">,</span> <span class="s1">&#39;rtl/&#39;</span><span class="p">]</span>
+<span class="p">)</span>
+<span class="n">collection</span> <span class="o">=</span> <span class="n">task</span><span class="o">.</span><span class="n">build</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</section>
+<section id="taskcheckuptodate">
+<h3>TaskCheckUpToDate<a class="headerlink" href="#taskcheckuptodate" title="Link to this heading">¶</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="TaskCheckUpToDate">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">TaskCheckUpToDate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">root_files</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">incdirs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#TaskCheckUpToDate" title="Link to this definition">¶</a></dt>
+<dd><p>Checks whether files in a collection are up-to-date relative to a timestamp.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>root_files</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – List of paths to root SystemVerilog files.</p></li>
+<li><p><strong>incdirs</strong> (<em>List</em><em>[</em><em>str</em><em>]</em><em>, </em><em>optional</em>) – List of include directories.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="TaskCheckUpToDate.check">
+<span class="sig-name descname"><span class="pre">check</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timestamp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#TaskCheckUpToDate.check" title="Link to this definition">¶</a></dt>
+<dd><p>Check if all files in the collection are up-to-date.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>info</strong> (<a class="reference internal" href="#FileCollection" title="FileCollection"><em>FileCollection</em></a>) – The file collection to check.</p></li>
+<li><p><strong>timestamp</strong> (<em>float</em>) – Reference timestamp (e.g., last build time).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if all files are up-to-date (not modified since timestamp), False otherwise.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<p><strong>Example:</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">svdep</span><span class="w"> </span><span class="kn">import</span> <span class="n">TaskCheckUpToDate</span><span class="p">,</span> <span class="n">FileCollection</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+
+<span class="n">checker</span> <span class="o">=</span> <span class="n">TaskCheckUpToDate</span><span class="p">(</span>
+    <span class="n">root_files</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;top.sv&#39;</span><span class="p">,</span> <span class="s1">&#39;dut.sv&#39;</span><span class="p">],</span>
+    <span class="n">incdirs</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;include/&#39;</span><span class="p">]</span>
+<span class="p">)</span>
+
+<span class="c1"># Load existing collection</span>
+<span class="n">collection</span> <span class="o">=</span> <span class="n">FileCollection</span><span class="o">.</span><span class="n">from_dict</span><span class="p">(</span><span class="n">saved_data</span><span class="p">)</span>
+
+<span class="c1"># Check against build output timestamp</span>
+<span class="n">build_time</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">getmtime</span><span class="p">(</span><span class="s1">&#39;output.bin&#39;</span><span class="p">)</span>
+<span class="n">is_current</span> <span class="o">=</span> <span class="n">checker</span><span class="o">.</span><span class="n">check</span><span class="p">(</span><span class="n">collection</span><span class="p">,</span> <span class="n">build_time</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</section>
+</section>
+<section id="data-classes">
+<h2>Data Classes<a class="headerlink" href="#data-classes" title="Link to this heading">¶</a></h2>
+<section id="filecollection">
+<h3>FileCollection<a class="headerlink" href="#filecollection" title="Link to this heading">¶</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="FileCollection">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">FileCollection</span></span><a class="headerlink" href="#FileCollection" title="Link to this definition">¶</a></dt>
+<dd><p>Container for a collection of files and their dependency information.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FileCollection.root_files">
+<span class="sig-name descname"><span class="pre">root_files</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#FileInfo" title="FileInfo"><span class="pre">FileInfo</span></a><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#FileCollection.root_files" title="Link to this definition">¶</a></dt>
+<dd><p>List of root file information objects.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FileCollection.file_info">
+<span class="sig-name descname"><span class="pre">file_info</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#FileInfo" title="FileInfo"><span class="pre">FileInfo</span></a><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#FileCollection.file_info" title="Link to this definition">¶</a></dt>
+<dd><p>Dictionary mapping file paths to their FileInfo objects.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="FileCollection.to_dict">
+<span class="sig-name descname"><span class="pre">to_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FileCollection.to_dict" title="Link to this definition">¶</a></dt>
+<dd><p>Convert the collection to a dictionary suitable for JSON serialization.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dictionary representation of the collection.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="FileCollection.from_dict">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">from_dict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">d</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FileCollection.from_dict" title="Link to this definition">¶</a></dt>
+<dd><p>Create a FileCollection from a dictionary.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>d</strong> (<em>dict</em>) – Dictionary representation of a file collection.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>New FileCollection instance.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#FileCollection" title="FileCollection">FileCollection</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="fileinfo">
+<h3>FileInfo<a class="headerlink" href="#fileinfo" title="Link to this heading">¶</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="FileInfo">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">FileInfo</span></span><a class="headerlink" href="#FileInfo" title="Link to this definition">¶</a></dt>
+<dd><p>Information about a single file in the dependency tree.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FileInfo.name">
+<span class="sig-name descname"><span class="pre">name</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#FileInfo.name" title="Link to this definition">¶</a></dt>
+<dd><p>Full path to the file.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FileInfo.timestamp">
+<span class="sig-name descname"><span class="pre">timestamp</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></span><a class="headerlink" href="#FileInfo.timestamp" title="Link to this definition">¶</a></dt>
+<dd><p>File modification timestamp (Unix epoch time).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FileInfo.includes">
+<span class="sig-name descname"><span class="pre">includes</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#FileInfo.includes" title="Link to this definition">¶</a></dt>
+<dd><p>List of paths to files included by this file.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="FileInfo.to_dict">
+<span class="sig-name descname"><span class="pre">to_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FileInfo.to_dict" title="Link to this definition">¶</a></dt>
+<dd><p>Convert to a dictionary.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dictionary representation.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="FileInfo.from_dict">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">from_dict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">d</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FileInfo.from_dict" title="Link to this definition">¶</a></dt>
+<dd><p>Create a FileInfo from a dictionary.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>d</strong> (<em>dict</em>) – Dictionary representation.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>New FileInfo instance.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#FileInfo" title="FileInfo">FileInfo</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+<section id="utility-functions">
+<h2>Utility Functions<a class="headerlink" href="#utility-functions" title="Link to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="is_native_available">
+<span class="sig-name descname"><span class="pre">is_native_available</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#is_native_available" title="Link to this definition">¶</a></dt>
+<dd><p>Check if the native C++ implementation is available.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>True if the native library is loaded and available.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="get_native_library_path">
+<span class="sig-name descname"><span class="pre">get_native_library_path</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#get_native_library_path" title="Link to this definition">¶</a></dt>
+<dd><p>Get the path to the loaded native library.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Path to the native library, or None if not available.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Optional[str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">svdep</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">API Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#main-classes">Main Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#data-classes">Data Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#utility-functions">Utility Functions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="data_formats.html">Data Formats</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="overview.html" title="previous chapter">Overview</a></li>
+      <li>Next: <a href="data_formats.html" title="next chapter">Data Formats</a></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2023-2024, Matthew Ballance and Contributors.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 9.0.4</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="_sources/api.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

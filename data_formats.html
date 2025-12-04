@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Data Formats &#8212; svdep 0.0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <script src="_static/documentation_options.js?v=d45e8c67"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="API Reference" href="api.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="data-formats">
+<h1>Data Formats<a class="headerlink" href="#data-formats" title="Link to this heading">¶</a></h1>
+<p>This section describes the JSON data format used by svdep for storing and loading
+file dependency information.</p>
+<section id="json-schema">
+<h2>JSON Schema<a class="headerlink" href="#json-schema" title="Link to this heading">¶</a></h2>
+<p>svdep uses a JSON format to persist file collection data between runs. This enables
+incremental builds by storing the dependency tree and timestamps from previous scans.</p>
+<section id="top-level-structure">
+<h3>Top-Level Structure<a class="headerlink" href="#top-level-structure" title="Link to this heading">¶</a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>{
+  &quot;root_files&quot;: [...],
+  &quot;file_info&quot;: {...}
+}
+</pre></div>
+</div>
+<p><strong>Fields:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">root_files</span></code>: Array of FileInfo objects for each root file.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">file_info</span></code>: Object mapping file paths to FileInfo objects for all files in the
+dependency tree (including root files and all included files).</p></li>
+</ul>
+</section>
+<section id="fileinfo-object">
+<h3>FileInfo Object<a class="headerlink" href="#fileinfo-object" title="Link to this heading">¶</a></h3>
+<p>Each file in the collection is represented by a FileInfo object:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/path/to/file.sv&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;timestamp&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1699123456</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;includes&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;/path/to/included.svh&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;/path/to/other.svh&quot;</span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><strong>Fields:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">name</span></code> (string): Absolute path to the file.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">timestamp</span></code> (integer): File modification time as Unix epoch timestamp (seconds since
+January 1, 1970).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">includes</span></code> (array of strings): List of absolute paths to files included by this file
+via <code class="docutils literal notranslate"><span class="pre">\`include</span></code> directives.</p></li>
+</ul>
+</section>
+</section>
+<section id="complete-example">
+<h2>Complete Example<a class="headerlink" href="#complete-example" title="Link to this heading">¶</a></h2>
+<p>Here is a complete example of a file collection JSON:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;root_files&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/project/rtl/top.sv&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;timestamp&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1699123456</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;includes&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;/project/rtl/include/defs.svh&quot;</span><span class="p">]</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/project/rtl/dut.sv&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;timestamp&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1699123400</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;includes&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;/project/rtl/include/defs.svh&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;/project/rtl/include/types.svh&quot;</span>
+<span class="w">      </span><span class="p">]</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;file_info&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;/project/rtl/top.sv&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/project/rtl/top.sv&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;timestamp&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1699123456</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;includes&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;/project/rtl/include/defs.svh&quot;</span><span class="p">]</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;/project/rtl/dut.sv&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/project/rtl/dut.sv&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;timestamp&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1699123400</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;includes&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;/project/rtl/include/defs.svh&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;/project/rtl/include/types.svh&quot;</span>
+<span class="w">      </span><span class="p">]</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;/project/rtl/include/defs.svh&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/project/rtl/include/defs.svh&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;timestamp&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1699100000</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;includes&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;/project/rtl/include/types.svh&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/project/rtl/include/types.svh&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;timestamp&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1699100100</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;includes&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;/project/rtl/include/defs.svh&quot;</span><span class="p">]</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>In this example:</p>
+<ul class="simple">
+<li><p>There are two root files: <code class="docutils literal notranslate"><span class="pre">top.sv</span></code> and <code class="docutils literal notranslate"><span class="pre">dut.sv</span></code></p></li>
+<li><p>Both root files include <code class="docutils literal notranslate"><span class="pre">defs.svh</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">dut.sv</span></code> also includes <code class="docutils literal notranslate"><span class="pre">types.svh</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">types.svh</span></code> itself includes <code class="docutils literal notranslate"><span class="pre">defs.svh</span></code> (creating a shared dependency)</p></li>
+<li><p>All files are tracked in <code class="docutils literal notranslate"><span class="pre">file_info</span></code> with their paths, timestamps, and includes</p></li>
+</ul>
+</section>
+<section id="usage-in-python">
+<h2>Usage in Python<a class="headerlink" href="#usage-in-python" title="Link to this heading">¶</a></h2>
+<p>Loading and saving file collections:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">svdep</span><span class="w"> </span><span class="kn">import</span> <span class="n">FileCollection</span><span class="p">,</span> <span class="n">TaskBuildFileCollection</span>
+
+<span class="c1"># Build and save</span>
+<span class="n">task</span> <span class="o">=</span> <span class="n">TaskBuildFileCollection</span><span class="p">(</span><span class="n">root_paths</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;top.sv&#39;</span><span class="p">],</span> <span class="n">incdirs</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;include/&#39;</span><span class="p">])</span>
+<span class="n">collection</span> <span class="o">=</span> <span class="n">task</span><span class="o">.</span><span class="n">build</span><span class="p">()</span>
+
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;deps.json&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">collection</span><span class="o">.</span><span class="n">to_dict</span><span class="p">(),</span> <span class="n">f</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="c1"># Load</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;deps.json&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+    <span class="n">collection</span> <span class="o">=</span> <span class="n">FileCollection</span><span class="o">.</span><span class="n">from_dict</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="compatibility">
+<h2>Compatibility<a class="headerlink" href="#compatibility" title="Link to this heading">¶</a></h2>
+<p>Both the pure-Python implementation and the native C++ implementation use the same
+JSON format, ensuring full interoperability. A file collection generated by one
+implementation can be loaded and used by the other.</p>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">svdep</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API Reference</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Data Formats</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#json-schema">JSON Schema</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#complete-example">Complete Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#usage-in-python">Usage in Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#compatibility">Compatibility</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="api.html" title="previous chapter">API Reference</a></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2023-2024, Matthew Ballance and Contributors.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 9.0.4</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="_sources/data_formats.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
