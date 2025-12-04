@@ -21,7 +21,14 @@ jobs:
     - name: Run Tests
       run: |
         export PYTHONPATH=$(pwd)/src
-        ./packages/python/bin/python -m pytest tests
+        ./packages/python/bin/python -m pip install pytest-json-ctrf
+        ./packages/python/bin/python -m pytest tests --ctrf ctrf-report.json
+      if: always()
+    - name: Publish Test Results
+      uses: ctrf-io/github-test-reporter@v1
+      with:
+        report-path: 'ctrf-report.json'
+      if: always()
     - name: Build Wheel
       run: |
         sed -i -e "s/version = \"\([0-9][0-9\.]*\)\"/version = \"\1.${GITHUB_RUN_ID}\"/" pyproject.toml
