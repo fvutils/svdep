@@ -2,15 +2,23 @@ import json
 import os
 import pathlib
 import pytest
-import pytest_fv as pfv
-from pytest_fv.fixtures import *
 import shutil
 from svdep import TaskBuildFileCollection, TaskCheckUpToDate
 import time
 
-def test_smoke(dirconfig : pfv.DirConfig):
+@pytest.fixture
+def test_srcdir():
+    """Return the directory containing test files."""
+    return os.path.dirname(__file__)
 
-    data_dir = os.path.join(dirconfig.test_srcdir(), "data/test_smoke")
+@pytest.fixture
+def rundir(tmp_path):
+    """Return a temporary run directory for the test."""
+    return tmp_path
+
+def test_smoke(test_srcdir):
+
+    data_dir = os.path.join(test_srcdir, "data/test_smoke")
 
     largest_timestamp = 0
     for file in ["smoke1.sv", "smoke2.sv", "foo.svh"]:
@@ -27,9 +35,9 @@ def test_smoke(dirconfig : pfv.DirConfig):
         os.path.join(data_dir, "smoke2.sv")]).check(info, largest_timestamp)
     assert ret == True
 
-def test_smoke_drop_file(dirconfig : pfv.DirConfig):
+def test_smoke_drop_file(test_srcdir):
 
-    data_dir = os.path.join(dirconfig.test_srcdir(), "data/test_smoke")
+    data_dir = os.path.join(test_srcdir, "data/test_smoke")
 
     largest_timestamp = 0
     for file in ["smoke1.sv", "smoke2.sv"]:
@@ -45,9 +53,9 @@ def test_smoke_drop_file(dirconfig : pfv.DirConfig):
     ret = TaskCheckUpToDate([os.path.join(data_dir, "smoke2.sv")]).check(info, largest_timestamp)
     assert ret == False
 
-def test_smoke_add_file(dirconfig : pfv.DirConfig):
+def test_smoke_add_file(test_srcdir):
 
-    data_dir = os.path.join(dirconfig.test_srcdir(), "data/test_smoke")
+    data_dir = os.path.join(test_srcdir, "data/test_smoke")
 
     largest_timestamp = 0
     for file in ["smoke1.sv", "smoke2.sv"]:
@@ -67,29 +75,29 @@ def test_smoke_add_file(dirconfig : pfv.DirConfig):
         ]).check(info, largest_timestamp)
     assert ret == False
 
-def test_smoke_mod_file(dirconfig : pfv.DirConfig):
+def test_smoke_mod_file(test_srcdir, rundir):
 
-    data_dir = os.path.join(dirconfig.test_srcdir(), "data/test_smoke")
+    data_dir = os.path.join(test_srcdir, "data/test_smoke")
 
     shutil.copytree(
         data_dir,
-        dirconfig.rundir(),
+        rundir,
         dirs_exist_ok=True)
 
     largest_timestamp = 0
     for file in ["smoke1.sv", "smoke2.sv", "smoke3.sv", "foo.svh"]:
-        ts = os.path.getmtime(os.path.join(dirconfig.rundir(), file))
+        ts = os.path.getmtime(os.path.join(rundir, file))
         if ts > largest_timestamp:
             largest_timestamp = ts
 
     info = TaskBuildFileCollection([
-        os.path.join(dirconfig.rundir(), "smoke1.sv"),
-        os.path.join(dirconfig.rundir(), "smoke2.sv"),
-        os.path.join(dirconfig.rundir(), "smoke3.sv")]).build()
+        os.path.join(rundir, "smoke1.sv"),
+        os.path.join(rundir, "smoke2.sv"),
+        os.path.join(rundir, "smoke3.sv")]).build()
 
     time.sleep(50/1000)
 
-    pathlib.Path(os.path.join(dirconfig.rundir(), "smoke2.sv")).touch()
+    pathlib.Path(os.path.join(rundir, "smoke2.sv")).touch()
 
     # smoke2.sv has changed. See if it is detected
     ret = TaskCheckUpToDate([
@@ -99,9 +107,9 @@ def test_smoke_mod_file(dirconfig : pfv.DirConfig):
         ]).check(info, largest_timestamp)
     assert ret == False
 
-def test_uvm(dirconfig : pfv.DirConfig):
+def test_uvm(test_srcdir):
     uvm_dir = os.path.abspath(os.path.join(
-        dirconfig.test_srcdir(), "../packages/uvm"))
+        test_srcdir, "../packages/uvm"))
 
     info = TaskBuildFileCollection([
         os.path.join(uvm_dir, "src/uvm_pkg.sv")],
@@ -112,11 +120,11 @@ def test_uvm(dirconfig : pfv.DirConfig):
 #        str(info.file_info)))
     print("info: %s" % str(json.dumps(info.to_dict())))
 
-def test_uvm_dump_load(dirconfig : pfv.DirConfig):
+def test_uvm_dump_load(test_srcdir):
     from io import StringIO
     from svdep import FileCollection
     uvm_dir = os.path.abspath(os.path.join(
-        dirconfig.test_srcdir(), "../packages/uvm"))
+        test_srcdir, "../packages/uvm"))
 
     info = TaskBuildFileCollection([
         os.path.join(uvm_dir, "src/uvm_pkg.sv")],

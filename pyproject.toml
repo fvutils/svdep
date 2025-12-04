@@ -1,3 +1,7 @@
+[build-system]
+requires = ["scikit-build-core>=0.5"]
+build-backend = "scikit_build_core.build"
+
 [project]
 name = "svdep"
 version = "0.0.1"
@@ -8,4 +12,25 @@ authors = [ {name = "Matthew Ballance", email = "matt.ballance@gmail.com"} ]
 description = "Checks whether SystemVerilog need to be recompiled"
 #long_description = "Checks whether SystemVerilog need to be recompiled"
 
-license = {file = "License"}
+license = {file = "LICENSE"}
+
+[tool.scikit-build]
+cmake.source-dir = "cpp"
+wheel.packages = ["src/svdep"]
+wheel.install-dir = "svdep"
+
+[tool.scikit-build.cmake.define]
+CMAKE_BUILD_TYPE = "Release"
+
+[tool.cibuildwheel]
+build = "cp39-* cp310-* cp311-* cp312-*"
+skip = "*-musllinux_*"
+
+[tool.cibuildwheel.linux]
+archs = ["x86_64"]
+
+[tool.cibuildwheel.macos]
+archs = ["x86_64", "arm64"]
+
+[tool.cibuildwheel.windows]
+archs = ["AMD64"]
