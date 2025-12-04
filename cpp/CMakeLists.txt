@@ -28,10 +28,9 @@ target_include_directories(svdep
         ${CMAKE_CURRENT_SOURCE_DIR}/src
 )
 
-# Set library version
+# Set library version (no soversion symlinks for Python package)
 set_target_properties(svdep PROPERTIES
     VERSION ${PROJECT_VERSION}
-    SOVERSION 1
 )
 
 # Platform-specific settings
@@ -42,11 +41,12 @@ endif()
 # Installation rules
 include(GNUInstallDirs)
 
+# Install library to svdep package directory for Python wheel
 install(TARGETS svdep
     EXPORT svdep-targets
-    LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
-    ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
-    RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
+    LIBRARY DESTINATION .
+    ARCHIVE DESTINATION .
+    RUNTIME DESTINATION .
 )
 
 install(DIRECTORY include/
