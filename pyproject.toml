@@ -12,7 +12,7 @@ authors = [ {name = "Matthew Ballance", email = "matt.ballance@gmail.com"} ]
 
 description = "Checks whether SystemVerilog need to be recompiled"
 
-dynamic = ["license"]
+license = "Apache-2.0"
 
 [tool.setuptools.packages.find]
 where = ["src"]

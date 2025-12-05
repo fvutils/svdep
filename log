@@ -1,0 +1,1873 @@
+__ext__
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.3, pluggy-1.5.0
+rootdir: /home/mballance/projects/fvutils/svdep
+plugins: fv-0.0.1
+collected 1 item
+
+tests/test_smoke.py WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/uvm_pkg.sv
+name_t: uvm_macros.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/uvm_macros.svh
+name_t: macros/uvm_version_defines.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/macros/uvm_version_defines.svh
+name_t: macros/uvm_global_defines.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/macros/uvm_global_defines.svh
+name_t: macros/uvm_message_defines.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/macros/uvm_message_defines.svh
+name_t: macros/uvm_phase_defines.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/macros/uvm_phase_defines.svh
+name_t: macros/uvm_object_defines.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/macros/uvm_object_defines.svh
+name_t: macros/uvm_printer_defines.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/macros/uvm_printer_defines.svh
+name_t: macros/uvm_tlm_defines.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/macros/uvm_tlm_defines.svh
+name_t: tlm1/uvm_tlm_imps.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm1/uvm_tlm_imps.svh
+name_t: macros/uvm_sequence_defines.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/macros/uvm_sequence_defines.svh
+name_t: macros/uvm_callback_defines.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/macros/uvm_callback_defines.svh
+name_t: macros/uvm_reg_defines.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/macros/uvm_reg_defines.svh
+name_t: macros/uvm_deprecated_defines.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/macros/uvm_deprecated_defines.svh
+name_t: dpi/uvm_dpi.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/dpi/uvm_dpi.svh
+name_t: dpi/uvm_hdl.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/dpi/uvm_hdl.svh
+name_t: dpi/uvm_svcmd_dpi.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/dpi/uvm_svcmd_dpi.svh
+name_t: dpi/uvm_regex.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/dpi/uvm_regex.svh
+name_t: base/uvm_base.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_base.svh
+name_t: base/uvm_coreservice.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_coreservice.svh
+name_t: base/uvm_version.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_version.svh
+name_t: base/uvm_object_globals.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_object_globals.svh
+name_t: base/uvm_misc.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_misc.svh
+name_t: base/uvm_object.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_object.svh
+name_t: base/uvm_pool.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_pool.svh
+name_t: base/uvm_queue.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_queue.svh
+name_t: base/uvm_factory.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_factory.svh
+name_t: base/uvm_registry.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_registry.svh
+name_t: base/uvm_spell_chkr.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_spell_chkr.svh
+name_t: base/uvm_resource.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_resource.svh
+name_t: deprecated/uvm_resource_converter.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/deprecated/uvm_resource_converter.svh
+name_t: base/uvm_resource_specializations.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_resource_specializations.svh
+name_t: base/uvm_resource_db.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_resource_db.svh
+name_t: base/uvm_config_db.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_config_db.svh
+name_t: base/uvm_printer.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_printer.svh
+name_t: base/uvm_comparer.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_comparer.svh
+name_t: base/uvm_packer.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_packer.svh
+name_t: base/uvm_links.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_links.svh
+name_t: base/uvm_tr_database.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_tr_database.svh
+name_t: base/uvm_tr_stream.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_tr_stream.svh
+name_t: base/uvm_recorder.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_recorder.svh
+name_t: base/uvm_event_callback.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_event_callback.svh
+name_t: base/uvm_event.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_event.svh
+name_t: base/uvm_barrier.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_barrier.svh
+name_t: base/uvm_callback.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_callback.svh
+name_t: uvm_macros.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/uvm_macros.svh
+name_t: base/uvm_report_message.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_report_message.svh
+name_t: base/uvm_report_catcher.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_report_catcher.svh
+name_t: base/uvm_report_server.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_report_server.svh
+name_t: base/uvm_report_handler.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_report_handler.svh
+name_t: base/uvm_report_object.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_report_object.svh
+name_t: base/uvm_transaction.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_transaction.svh
+name_t: base/uvm_phase.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_phase.svh
+name_t: base/uvm_domain.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_domain.svh
+name_t: base/uvm_bottomup_phase.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_bottomup_phase.svh
+name_t: base/uvm_topdown_phase.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_topdown_phase.svh
+name_t: base/uvm_task_phase.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_task_phase.svh
+name_t: base/uvm_common_phases.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_common_phases.svh
+name_t: base/uvm_runtime_phases.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_runtime_phases.svh
+name_t: base/uvm_component.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_component.svh
+name_t: base/uvm_root.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_root.svh
+name_t: base/uvm_objection.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_objection.svh
+name_t: base/uvm_heartbeat.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_heartbeat.svh
+name_t: base/uvm_globals.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_globals.svh
+name_t: base/uvm_cmdline_processor.svh
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_cmdline_processor.svh
+name_t: base/uvm_traversal.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_traversal.svh
+name_t: dap/uvm_dap.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/dap/uvm_dap.svh
+name_t: dap/uvm_set_get_dap_base.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/dap/uvm_set_get_dap_base.svh
+name_t: dap/uvm_simple_lock_dap.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/dap/uvm_simple_lock_dap.svh
+name_t: dap/uvm_get_to_lock_dap.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/dap/uvm_get_to_lock_dap.svh
+name_t: dap/uvm_set_before_get_dap.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/dap/uvm_set_before_get_dap.svh
+name_t: tlm1/uvm_tlm.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm1/uvm_tlm.svh
+name_t: tlm1/uvm_tlm_ifs.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm1/uvm_tlm_ifs.svh
+name_t: tlm1/uvm_sqr_ifs.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm1/uvm_sqr_ifs.svh
+name_t: base/uvm_port_base.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_port_base.svh
+name_t: tlm1/uvm_tlm_imps.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm1/uvm_tlm_imps.svh
+name_t: tlm1/uvm_imps.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm1/uvm_imps.svh
+name_t: tlm1/uvm_ports.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm1/uvm_ports.svh
+name_t: tlm1/uvm_exports.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm1/uvm_exports.svh
+name_t: tlm1/uvm_analysis_port.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm1/uvm_analysis_port.svh
+name_t: tlm1/uvm_tlm_fifo_base.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm1/uvm_tlm_fifo_base.svh
+name_t: tlm1/uvm_tlm_fifos.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm1/uvm_tlm_fifos.svh
+name_t: tlm1/uvm_tlm_req_rsp.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm1/uvm_tlm_req_rsp.svh
+name_t: tlm1/uvm_sqr_connections.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm1/uvm_sqr_connections.svh
+name_t: comps/uvm_comps.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_comps.svh
+name_t: comps/uvm_pair.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_pair.svh
+name_t: comps/uvm_policies.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_policies.svh
+name_t: comps/uvm_in_order_comparator.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_in_order_comparator.svh
+name_t: comps/uvm_algorithmic_comparator.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_algorithmic_comparator.svh
+name_t: comps/uvm_random_stimulus.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_random_stimulus.svh
+name_t: comps/uvm_subscriber.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_subscriber.svh
+name_t: comps/uvm_monitor.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_monitor.svh
+name_t: comps/uvm_driver.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_driver.svh
+name_t: comps/uvm_push_driver.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_push_driver.svh
+name_t: comps/uvm_scoreboard.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_scoreboard.svh
+name_t: comps/uvm_agent.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_agent.svh
+name_t: comps/uvm_env.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_env.svh
+name_t: comps/uvm_test.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_test.svh
+name_t: seq/uvm_seq.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/seq/uvm_seq.svh
+name_t: seq/uvm_sequence_item.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/seq/uvm_sequence_item.svh
+name_t: seq/uvm_sequencer_base.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/seq/uvm_sequencer_base.svh
+name_t: seq/uvm_sequencer_analysis_fifo.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/seq/uvm_sequencer_analysis_fifo.svh
+name_t: seq/uvm_sequencer_param_base.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/seq/uvm_sequencer_param_base.svh
+name_t: seq/uvm_sequencer.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/seq/uvm_sequencer.svh
+name_t: seq/uvm_push_sequencer.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/seq/uvm_push_sequencer.svh
+name_t: seq/uvm_sequence_base.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/seq/uvm_sequence_base.svh
+name_t: seq/uvm_sequence.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/seq/uvm_sequence.svh
+name_t: seq/uvm_sequence_library.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/seq/uvm_sequence_library.svh
+name_t: seq/uvm_sequence_builtin.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/seq/uvm_sequence_builtin.svh
+name_t: tlm2/uvm_tlm2.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm2/uvm_tlm2.svh
+name_t: tlm2/uvm_tlm2_defines.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm2/uvm_tlm2_defines.svh
+name_t: tlm2/uvm_tlm2_time.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm2/uvm_tlm2_time.svh
+name_t: tlm2/uvm_tlm2_generic_payload.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm2/uvm_tlm2_generic_payload.svh
+name_t: tlm2/uvm_tlm2_ifs.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm2/uvm_tlm2_ifs.svh
+name_t: tlm2/uvm_tlm2_imps.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm2/uvm_tlm2_imps.svh
+name_t: tlm2/uvm_tlm2_ports.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm2/uvm_tlm2_ports.svh
+name_t: tlm2/uvm_tlm2_exports.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm2/uvm_tlm2_exports.svh
+name_t: tlm2/uvm_tlm2_sockets_base.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm2/uvm_tlm2_sockets_base.svh
+name_t: tlm2/uvm_tlm2_sockets.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm2/uvm_tlm2_sockets.svh
+name_t: reg/uvm_reg_model.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_model.svh
+name_t: reg/uvm_reg_item.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_item.svh
+name_t: reg/uvm_reg_adapter.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_adapter.svh
+name_t: reg/uvm_reg_predictor.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_predictor.svh
+name_t: reg/uvm_reg_sequence.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_sequence.svh
+name_t: reg/uvm_reg_cbs.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_cbs.svh
+name_t: reg/uvm_reg_backdoor.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_backdoor.svh
+name_t: reg/uvm_reg_field.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_field.svh
+name_t: reg/uvm_vreg_field.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_vreg_field.svh
+name_t: reg/uvm_reg.svh
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+WARNING: t_ignore contains a literal backslash '\'
+lex: tokens   = ('INCLUDE', 'STRING', 'ID', 'OP', 'DIRECTIVE', 'COMMENTSL')
+lex: literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#', '@', '!', '?', '~', '.']
+lex: states   = {'INITIAL': 'inclusive'}
+lex: Adding rule t_STRING -> '".*"|""' (state 'INITIAL')
+lex: Adding rule t_DIRECTIVE -> '`[a-zA-Z0-9][a-zA-Z0-9_]*|`' (state 'INITIAL')
+lex: Adding rule t_COMMENTSL -> '//.*\n' (state 'INITIAL')
+lex: Adding rule t_COMMENT -> '/\*.*?\*/' (state 'INITIAL')
+lex: Adding rule t_ID -> '[$_a-zA-Z0-9][_a-zA-Z0-9]*' (state 'INITIAL')
+lex: ==== MASTER REGEXS FOLLOW ====
+lex: state 'INITIAL' : regex[0] = '(?P<t_STRING>".*"|"")|(?P<t_DIRECTIVE>`[a-zA-Z0-9][a-zA-Z0-9_]*|`)|(?P<t_COMMENTSL>//.*\n)|(?P<t_COMMENT>/\*.*?\*/)|(?P<t_ID>[$_a-zA-Z0-9][_a-zA-Z0-9]*)'
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg.svh
+name_t: reg/uvm_reg_indirect.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_indirect.svh
+name_t: reg/uvm_reg_fifo.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_fifo.svh
+name_t: reg/uvm_reg_file.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_file.svh
+name_t: reg/uvm_mem_mam.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_mem_mam.svh
+name_t: reg/uvm_vreg.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_vreg.svh
+name_t: reg/uvm_mem.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_mem.svh
+name_t: reg/uvm_reg_map.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_map.svh
+name_t: reg/uvm_reg_block.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_block.svh
+name_t: reg/sequences/uvm_reg_hw_reset_seq.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/sequences/uvm_reg_hw_reset_seq.svh
+name_t: reg/sequences/uvm_reg_bit_bash_seq.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/sequences/uvm_reg_bit_bash_seq.svh
+name_t: reg/sequences/uvm_mem_walk_seq.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/sequences/uvm_mem_walk_seq.svh
+name_t: reg/sequences/uvm_mem_access_seq.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/sequences/uvm_mem_access_seq.svh
+name_t: reg/sequences/uvm_reg_access_seq.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/sequences/uvm_reg_access_seq.svh
+name_t: reg/sequences/uvm_reg_mem_shared_access_seq.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/sequences/uvm_reg_mem_shared_access_seq.svh
+name_t: reg/sequences/uvm_reg_mem_built_in_seq.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/sequences/uvm_reg_mem_built_in_seq.svh
+name_t: reg/sequences/uvm_reg_mem_hdl_paths_seq.svh
+buildFileInfo: /home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/sequences/uvm_reg_mem_hdl_paths_seq.svh
+info: {"root_files": [{"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/uvm_pkg.sv", "timestamp": 1402647219.0, "includes": ["/home/mballance/projects/fvutils/svdep/packages/uvm/src/uvm_macros.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/dpi/uvm_dpi.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_base.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/dap/uvm_dap.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm1/uvm_tlm.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_comps.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/seq/uvm_seq.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm2/uvm_tlm2.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_model.svh"]}], "file_info": {"/home/mballance/projects/fvutils/svdep/packages/uvm/src/uvm_pkg.sv": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/uvm_pkg.sv", "timestamp": 1402647219.0, "includes": ["/home/mballance/projects/fvutils/svdep/packages/uvm/src/uvm_macros.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/dpi/uvm_dpi.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_base.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/dap/uvm_dap.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm1/uvm_tlm.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_comps.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/seq/uvm_seq.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm2/uvm_tlm2.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_model.svh"]}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/uvm_macros.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/uvm_macros.svh", "timestamp": 1402647219.0, "includes": ["/home/mballance/projects/fvutils/svdep/packages/uvm/src/macros/uvm_version_defines.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/macros/uvm_global_defines.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/macros/uvm_message_defines.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/macros/uvm_phase_defines.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/macros/uvm_object_defines.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/macros/uvm_printer_defines.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/macros/uvm_tlm_defines.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/macros/uvm_sequence_defines.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/macros/uvm_callback_defines.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/macros/uvm_reg_defines.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/macros/uvm_deprecated_defines.svh"]}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/macros/uvm_version_defines.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/macros/uvm_version_defines.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/macros/uvm_global_defines.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/macros/uvm_global_defines.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/macros/uvm_message_defines.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/macros/uvm_message_defines.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/macros/uvm_phase_defines.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/macros/uvm_phase_defines.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/macros/uvm_object_defines.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/macros/uvm_object_defines.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/macros/uvm_printer_defines.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/macros/uvm_printer_defines.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/macros/uvm_tlm_defines.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/macros/uvm_tlm_defines.svh", "timestamp": 1402647219.0, "includes": ["/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm1/uvm_tlm_imps.svh"]}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm1/uvm_tlm_imps.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm1/uvm_tlm_imps.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/macros/uvm_sequence_defines.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/macros/uvm_sequence_defines.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/macros/uvm_callback_defines.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/macros/uvm_callback_defines.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/macros/uvm_reg_defines.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/macros/uvm_reg_defines.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/macros/uvm_deprecated_defines.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/macros/uvm_deprecated_defines.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/dpi/uvm_dpi.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/dpi/uvm_dpi.svh", "timestamp": 1402647219.0, "includes": ["/home/mballance/projects/fvutils/svdep/packages/uvm/src/dpi/uvm_hdl.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/dpi/uvm_svcmd_dpi.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/dpi/uvm_regex.svh"]}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/dpi/uvm_hdl.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/dpi/uvm_hdl.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/dpi/uvm_svcmd_dpi.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/dpi/uvm_svcmd_dpi.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/dpi/uvm_regex.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/dpi/uvm_regex.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_base.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_base.svh", "timestamp": 1402647219.0, "includes": ["/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_coreservice.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_version.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_object_globals.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_misc.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_object.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_pool.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_queue.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_factory.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_registry.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_spell_chkr.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_resource.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/deprecated/uvm_resource_converter.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_resource_specializations.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_resource_db.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_config_db.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_printer.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_comparer.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_packer.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_links.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_tr_database.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_tr_stream.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_recorder.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_event_callback.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_event.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_barrier.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_callback.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_report_message.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_report_catcher.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_report_server.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_report_handler.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_report_object.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_transaction.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_phase.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_domain.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_bottomup_phase.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_topdown_phase.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_task_phase.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_common_phases.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_runtime_phases.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_component.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_objection.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_heartbeat.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_globals.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_cmdline_processor.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_traversal.svh"]}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_coreservice.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_coreservice.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_version.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_version.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_object_globals.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_object_globals.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_misc.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_misc.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_object.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_object.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_pool.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_pool.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_queue.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_queue.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_factory.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_factory.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_registry.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_registry.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_spell_chkr.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_spell_chkr.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_resource.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_resource.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/deprecated/uvm_resource_converter.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/deprecated/uvm_resource_converter.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_resource_specializations.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_resource_specializations.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_resource_db.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_resource_db.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_config_db.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_config_db.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_printer.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_printer.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_comparer.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_comparer.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_packer.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_packer.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_links.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_links.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_tr_database.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_tr_database.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_tr_stream.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_tr_stream.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_recorder.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_recorder.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_event_callback.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_event_callback.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_event.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_event.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_barrier.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_barrier.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_callback.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_callback.svh", "timestamp": 1402647219.0, "includes": ["/home/mballance/projects/fvutils/svdep/packages/uvm/src/uvm_macros.svh"]}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_report_message.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_report_message.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_report_catcher.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_report_catcher.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_report_server.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_report_server.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_report_handler.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_report_handler.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_report_object.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_report_object.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_transaction.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_transaction.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_phase.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_phase.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_domain.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_domain.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_bottomup_phase.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_bottomup_phase.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_topdown_phase.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_topdown_phase.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_task_phase.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_task_phase.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_common_phases.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_common_phases.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_runtime_phases.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_runtime_phases.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_component.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_component.svh", "timestamp": 1402647219.0, "includes": ["/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_root.svh"]}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_root.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_root.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_objection.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_objection.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_heartbeat.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_heartbeat.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_globals.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_globals.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_cmdline_processor.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_cmdline_processor.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_traversal.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_traversal.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/dap/uvm_dap.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/dap/uvm_dap.svh", "timestamp": 1402647219.0, "includes": ["/home/mballance/projects/fvutils/svdep/packages/uvm/src/dap/uvm_set_get_dap_base.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/dap/uvm_simple_lock_dap.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/dap/uvm_get_to_lock_dap.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/dap/uvm_set_before_get_dap.svh"]}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/dap/uvm_set_get_dap_base.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/dap/uvm_set_get_dap_base.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/dap/uvm_simple_lock_dap.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/dap/uvm_simple_lock_dap.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/dap/uvm_get_to_lock_dap.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/dap/uvm_get_to_lock_dap.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/dap/uvm_set_before_get_dap.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/dap/uvm_set_before_get_dap.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm1/uvm_tlm.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm1/uvm_tlm.svh", "timestamp": 1402647219.0, "includes": ["/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm1/uvm_tlm_ifs.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm1/uvm_sqr_ifs.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_port_base.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm1/uvm_tlm_imps.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm1/uvm_imps.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm1/uvm_ports.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm1/uvm_exports.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm1/uvm_analysis_port.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm1/uvm_tlm_fifo_base.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm1/uvm_tlm_fifos.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm1/uvm_tlm_req_rsp.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm1/uvm_sqr_connections.svh"]}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm1/uvm_tlm_ifs.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm1/uvm_tlm_ifs.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm1/uvm_sqr_ifs.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm1/uvm_sqr_ifs.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_port_base.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/base/uvm_port_base.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm1/uvm_imps.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm1/uvm_imps.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm1/uvm_ports.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm1/uvm_ports.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm1/uvm_exports.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm1/uvm_exports.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm1/uvm_analysis_port.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm1/uvm_analysis_port.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm1/uvm_tlm_fifo_base.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm1/uvm_tlm_fifo_base.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm1/uvm_tlm_fifos.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm1/uvm_tlm_fifos.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm1/uvm_tlm_req_rsp.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm1/uvm_tlm_req_rsp.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm1/uvm_sqr_connections.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm1/uvm_sqr_connections.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_comps.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_comps.svh", "timestamp": 1402647219.0, "includes": ["/home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_pair.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_policies.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_in_order_comparator.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_algorithmic_comparator.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_random_stimulus.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_subscriber.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_monitor.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_driver.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_push_driver.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_scoreboard.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_agent.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_env.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_test.svh"]}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_pair.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_pair.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_policies.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_policies.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_in_order_comparator.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_in_order_comparator.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_algorithmic_comparator.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_algorithmic_comparator.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_random_stimulus.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_random_stimulus.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_subscriber.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_subscriber.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_monitor.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_monitor.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_driver.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_driver.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_push_driver.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_push_driver.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_scoreboard.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_scoreboard.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_agent.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_agent.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_env.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_env.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_test.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/comps/uvm_test.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/seq/uvm_seq.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/seq/uvm_seq.svh", "timestamp": 1402647219.0, "includes": ["/home/mballance/projects/fvutils/svdep/packages/uvm/src/seq/uvm_sequence_item.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/seq/uvm_sequencer_base.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/seq/uvm_sequencer_analysis_fifo.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/seq/uvm_sequencer_param_base.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/seq/uvm_sequencer.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/seq/uvm_push_sequencer.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/seq/uvm_sequence_base.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/seq/uvm_sequence.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/seq/uvm_sequence_library.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/seq/uvm_sequence_builtin.svh"]}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/seq/uvm_sequence_item.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/seq/uvm_sequence_item.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/seq/uvm_sequencer_base.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/seq/uvm_sequencer_base.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/seq/uvm_sequencer_analysis_fifo.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/seq/uvm_sequencer_analysis_fifo.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/seq/uvm_sequencer_param_base.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/seq/uvm_sequencer_param_base.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/seq/uvm_sequencer.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/seq/uvm_sequencer.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/seq/uvm_push_sequencer.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/seq/uvm_push_sequencer.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/seq/uvm_sequence_base.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/seq/uvm_sequence_base.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/seq/uvm_sequence.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/seq/uvm_sequence.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/seq/uvm_sequence_library.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/seq/uvm_sequence_library.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/seq/uvm_sequence_builtin.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/seq/uvm_sequence_builtin.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm2/uvm_tlm2.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm2/uvm_tlm2.svh", "timestamp": 1402647219.0, "includes": ["/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm2/uvm_tlm2_defines.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm2/uvm_tlm2_time.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm2/uvm_tlm2_generic_payload.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm2/uvm_tlm2_ifs.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm2/uvm_tlm2_imps.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm2/uvm_tlm2_ports.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm2/uvm_tlm2_exports.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm2/uvm_tlm2_sockets_base.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm2/uvm_tlm2_sockets.svh"]}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm2/uvm_tlm2_defines.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm2/uvm_tlm2_defines.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm2/uvm_tlm2_time.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm2/uvm_tlm2_time.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm2/uvm_tlm2_generic_payload.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm2/uvm_tlm2_generic_payload.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm2/uvm_tlm2_ifs.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm2/uvm_tlm2_ifs.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm2/uvm_tlm2_imps.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm2/uvm_tlm2_imps.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm2/uvm_tlm2_ports.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm2/uvm_tlm2_ports.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm2/uvm_tlm2_exports.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm2/uvm_tlm2_exports.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm2/uvm_tlm2_sockets_base.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm2/uvm_tlm2_sockets_base.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm2/uvm_tlm2_sockets.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/tlm2/uvm_tlm2_sockets.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_model.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_model.svh", "timestamp": 1402647219.0, "includes": ["/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_item.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_adapter.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_predictor.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_sequence.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_cbs.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_backdoor.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_field.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_vreg_field.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_indirect.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_fifo.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_file.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_mem_mam.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_vreg.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_mem.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_map.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_block.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/sequences/uvm_reg_hw_reset_seq.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/sequences/uvm_reg_bit_bash_seq.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/sequences/uvm_mem_walk_seq.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/sequences/uvm_mem_access_seq.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/sequences/uvm_reg_access_seq.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/sequences/uvm_reg_mem_shared_access_seq.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/sequences/uvm_reg_mem_built_in_seq.svh", "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/sequences/uvm_reg_mem_hdl_paths_seq.svh"]}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_item.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_item.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_adapter.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_adapter.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_predictor.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_predictor.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_sequence.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_sequence.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_cbs.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_cbs.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_backdoor.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_backdoor.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_field.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_field.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_vreg_field.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_vreg_field.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_indirect.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_indirect.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_fifo.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_fifo.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_file.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_file.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_mem_mam.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_mem_mam.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_vreg.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_vreg.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_mem.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_mem.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_map.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_map.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_block.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/uvm_reg_block.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/sequences/uvm_reg_hw_reset_seq.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/sequences/uvm_reg_hw_reset_seq.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/sequences/uvm_reg_bit_bash_seq.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/sequences/uvm_reg_bit_bash_seq.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/sequences/uvm_mem_walk_seq.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/sequences/uvm_mem_walk_seq.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/sequences/uvm_mem_access_seq.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/sequences/uvm_mem_access_seq.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/sequences/uvm_reg_access_seq.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/sequences/uvm_reg_access_seq.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/sequences/uvm_reg_mem_shared_access_seq.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/sequences/uvm_reg_mem_shared_access_seq.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/sequences/uvm_reg_mem_built_in_seq.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/sequences/uvm_reg_mem_built_in_seq.svh", "timestamp": 1402647219.0, "includes": []}, "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/sequences/uvm_reg_mem_hdl_paths_seq.svh": {"name": "/home/mballance/projects/fvutils/svdep/packages/uvm/src/reg/sequences/uvm_reg_mem_hdl_paths_seq.svh", "timestamp": 1402647219.0, "includes": []}}}
+.
+
+============================== 1 passed in 0.10s ===============================

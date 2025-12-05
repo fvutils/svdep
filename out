@@ -1,0 +1,12 @@
+	   ivpm.yaml
+	   src/svdep/__init__.py
+	    src/svdep/file_collection_info.py
+	    src/svdep/task_compute_file_deps.py
+
+	src/svdep/file_collection.py
+	src/svdep/file_info.py
+	src/svdep/svpp_lexer.py
+	src/svdep/task_build_file_collection.py
+	src/svdep/task_check_up_to_date.py
+	tests/
+
