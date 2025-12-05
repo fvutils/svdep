@@ -26,31 +26,22 @@ jobs:
         report-path: 'ctrf-report.json'
       if: always()
 
-  build_wheels:
-    name: Build wheels on ${{ matrix.os }}
-    runs-on: ${{ matrix.os }}
-    env:
-        CIBW_ENVIRONMENT_LINUX: "CMAKE_BUILD_TOOL='Unix Makefiles'"
-    strategy:
-      matrix:
-#        os: [ubuntu-latest, windows-latest, macos-latest]
-        os: [ubuntu-latest, macos-latest]
+  build_wheel:
+    name: Build wheel
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
     - name: Set version
-      shell: bash
       run: |
-        sed -i.bak -e "s/version = \"\([0-9][0-9\.]*\)\"/version = \"\1.${GITHUB_RUN_ID}\"/" pyproject.toml
-    - name: Install Linux deps
-      if: matrix.os == 'ubuntu-latest'
+        sed -i -e "s/version = \"\([0-9][0-9\.]*\)\"/version = \"\1.${GITHUB_RUN_ID}\"/" pyproject.toml
+    - name: Build wheel
       run: |
-        sudo apt-get install cmake ninja-build -y
-    - name: Build wheels
-      uses: pypa/cibuildwheel@v2.23.3
+        python3 -m pip install build
+        python3 -m build --wheel
     - uses: actions/upload-artifact@v4
       with:
-        name: cibw-wheels-${{ matrix.os }}-${{ strategy.job-index }}
-        path: ./wheelhouse/*.whl
+        name: wheel
+        path: ./dist/*.whl
 
   build_docs:
     runs-on: ubuntu-latest
@@ -70,15 +61,14 @@ jobs:
         folder: build/html
 
   publish:
-    needs: [test, build_wheels]
+    needs: [test, build_wheel]
     runs-on: ubuntu-latest
     if: startsWith(github.ref, 'refs/heads/main')
     steps:
     - uses: actions/download-artifact@v4
       with:
-        pattern: cibw-wheels-*
+        name: wheel
         path: dist
-        merge-multiple: true
     - name: Publish to PyPi
       env:
         TWINE_USERNAME: __token__
