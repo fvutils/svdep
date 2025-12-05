@@ -41,7 +41,7 @@ jobs:
     - name: Install Linux deps
       if: matrix.os == 'ubuntu-latest'
       run: |
-        sudo apt-get install cmake ninja -y
+        sudo apt-get install cmake ninja-build -y
     - name: Build wheels
       uses: pypa/cibuildwheel@v2.23.3
     - uses: actions/upload-artifact@v4
