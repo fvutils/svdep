@@ -35,7 +35,8 @@ svdep_dir = proj_dir
 
 ext = Extension("zsp_arl_dm.core",
             sources=[
-                os.path.join(svdep_dir, 'src', "core.pyx"),
+#                os.path.join(svdep_dir, 'src', "core.pyx"),
+                os.path.join('src', "core.pyx"),
             ],
             language="c++",
             include_dirs=[]
@@ -80,8 +81,7 @@ if isSrcBuild:
 #    setup_args["ivpm_extdep_pkgs"] = ["vsc-dm", "debug-mgr"]
     setup_args["ivpm_extra_data"] = {
         "svdep": [
-            ("src/include", "share"),
-            ("build/{libdir}/{libpref}svdep{dllext}", ""),
+            ("build/cpp/{libpref}svdep{dllext}", ""),
         ]
     }
 

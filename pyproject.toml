@@ -13,7 +13,7 @@ authors = [ {name = "Matthew Ballance", email = "matt.ballance@gmail.com"} ]
 description = "Checks whether SystemVerilog need to be recompiled"
 # long_description = "Checks whether SystemVerilog need to be recompiled"
 
-license = 'Apache 2.0'
+dynamic = ["license"]
 
 [tool.scikit-build]
 cmake.source-dir = "cpp"
