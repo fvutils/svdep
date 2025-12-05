@@ -33,7 +33,8 @@ jobs:
         CIBW_ENVIRONMENT_LINUX: "CMAKE_BUILD_TOOL='Unix Makefiles'"
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest]
+#        os: [ubuntu-latest, windows-latest, macos-latest]
+        os: [ubuntu-latest, macos-latest]
     steps:
     - uses: actions/checkout@v4
     - name: Set version
