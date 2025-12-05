@@ -1,18 +1,19 @@
 [build-system]
-requires = ["scikit-build-core>=0.5"]
-build-backend = "scikit_build_core.build"
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
 
 [project]
 name = "svdep"
 version = "0.0.1"
 dependencies = [ "ply" ]
+readme = "README.md"
 
 authors = [ {name = "Matthew Ballance", email = "matt.ballance@gmail.com"} ]
 
 description = "Checks whether SystemVerilog need to be recompiled"
-#long_description = "Checks whether SystemVerilog need to be recompiled"
+# long_description = "Checks whether SystemVerilog need to be recompiled"
 
-license = {file = "LICENSE"}
+#license = {file = "LICENSE"}
 
 [tool.scikit-build]
 cmake.source-dir = "cpp"
