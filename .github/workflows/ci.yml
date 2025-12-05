@@ -39,7 +39,7 @@ jobs:
       run: |
         sed -i.bak -e "s/version = \"\([0-9][0-9\.]*\)\"/version = \"\1.${GITHUB_RUN_ID}\"/" pyproject.toml
     - name: Install Linux deps
-      if: ${{ matrix.os }} == ubuntu-latest
+      if: matrix.os == 'ubuntu-latest'
       run: |
         sudo apt-get install cmake -y
     - name: Build wheels
