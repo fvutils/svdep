@@ -30,7 +30,7 @@ jobs:
     name: Build wheels on ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     env:
-        CIBW_ENVIRONMENT_LINUX: "CMAKE_BUILD_TOOL=make"
+        CIBW_ENVIRONMENT_LINUX: "CMAKE_BUILD_TOOL='Unix Makefiles'"
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest, macos-latest]
