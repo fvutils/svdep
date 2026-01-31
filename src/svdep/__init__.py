@@ -1,6 +1,7 @@
 
 from .file_collection import FileCollection
 from .native import is_native_available, get_native_library_path
+from .hash_files import compute_hash_for_files
 
 # Import pure-Python implementations
 from .task_check_up_to_date import TaskCheckUpToDate as _PythonTaskCheckUpToDate
