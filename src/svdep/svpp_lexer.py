@@ -16,8 +16,14 @@ tokens = (
 #t_STRING = r"'([^\\']+|\\'|\\\\)*'"
 # r'"([^"\n]|(\\"))*"$'
 def t_STRING(t):
-#    r"'([^\\']+|\\'|\\\\)*'"
-    r'".*"|""'
+    # A SystemVerilog string literal: opening '"', then any run of
+    #   - an escape sequence  (\\. -- e.g. \" \\ \n)
+    #   - a line continuation (\\ followed by a newline; '.' doesn't match \n)
+    #   - any ordinary character that isn't a quote, backslash, or newline
+    # then the closing '"'. This stops at the first *unescaped* quote (so it is
+    # not greedy across multiple literals) and correctly spans multi-line strings
+    # that use '\'-newline continuation (e.g. UVM's uvm_reg_map.svh).
+    r'"(\\.|\\\n|[^"\\\n])*"'
     t.value = t.value[1:-1]
     return t
 def t_DIRECTIVE(t):
@@ -50,7 +56,10 @@ literals = [';', ':', "'", ',', '+', '-', '*', '/', '%', '^', '=', '&', '|', '#'
 t_ignore = ' \t\n()[]{}<>'+chr(65533)
 
 def t_error(t):
-    print("Error: %s" % str(t))
+    # This is a dependency scanner, not a full parser: an unrecognized character
+    # must not abort the whole collection build. Skip it and carry on so we still
+    # find every `include directive in the file.
+    t.lexer.skip(1)
 
 def mk_lexer(**kwargs):
     return lex.lex(**kwargs)
