@@ -22,6 +22,7 @@ package:
       src: pypi
     - name: uvm
       url: https://www.accellera.org/images/downloads/standards/uvm/uvm-1.2.tar.gz
+      cache: True
     - name: ninja
       src: pypi
     - name: setuptools-scm
