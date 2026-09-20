@@ -2,6 +2,13 @@
 package:
   name: svdep
 
+  # Selects the dep-set a bare `ivpm update` resolves in this workspace.
+  # Older ivpm picked default-dev for the root project implicitly; 2.35.0
+  # requires it to be stated, and without it CI fetched only `ply` -- the UVM
+  # tree the test_uvm* tests read lives in default-dev, so they failed on a
+  # missing packages/uvm/src/uvm_pkg.sv.
+  default-dep-set: default-dev
+
   setup-deps:
   - ninja
   - cython
