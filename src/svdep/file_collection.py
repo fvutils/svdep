@@ -27,6 +27,13 @@ from .file_info import FileInfo
 class FileCollection(object):
     root_files : List = dc.field(default_factory=list)
     file_info : Dict[str, object] = dc.field(default_factory=dict)
+    # Include names that no incdir resolved. Whether that is a defect depends
+    # entirely on the caller: a scan run against a full compilation's search
+    # path has found a real problem, while a scan of one fileset in isolation
+    # is expected to miss includes that a sibling fileset's incdir provides.
+    # Reported rather than logged, so the caller -- which is the only one that
+    # knows which case it is in -- decides.
+    unresolved : List[str] = dc.field(default_factory=list)
 
     def to_dict(self):
         ret = {}

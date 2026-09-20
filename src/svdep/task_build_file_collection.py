@@ -70,7 +70,10 @@ class TaskBuildFileCollection(object):
                         inc = self._buildFileInfo(inc_path)
                         ret.includes.append(inc.name)
                     else:
-                        self._log.critical("Failed to find include %s" % name_t.value)
+                        # Not necessarily an error -- see FileCollection.unresolved
+                        self._log.debug("Failed to find include %s" % name_t.value)
+                        if name_t.value not in self.collection.unresolved:
+                            self.collection.unresolved.append(name_t.value)
 
         return ret
         
